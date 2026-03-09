@@ -210,7 +210,7 @@ Possible improvements:
 
 # 👨‍💻 Maintainer
 
-**Daniel Cruz**
+**DX**
 
 GitHub
  https://github.com/dx-zone
