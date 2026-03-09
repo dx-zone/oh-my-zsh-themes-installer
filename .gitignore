@@ -1,0 +1,285 @@
+# ------------------------------------------------------------------------------
+# Oh My Zsh Themes Repository - Hardened .gitignore
+# ------------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------------
+# OS / filesystem noise
+# ------------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100/
+.Trashes/
+._*
+
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+Icon?
+
+*~
+.*.swp
+.*.swo
+*.swp
+*.swo
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.rej
+*.retry
+
+# ------------------------------------------------------------------------------
+# Logs / runtime artifacts / reports
+# ------------------------------------------------------------------------------
+*.log
+logs/
+log/
+*.out
+*.err
+*.trace
+*.stackdump
+*.pid
+*.pid.lock
+*.seed
+*.gz
+*.tgz
+
+# ------------------------------------------------------------------------------
+# Shell history / local shell artifacts
+# ------------------------------------------------------------------------------
+.zsh_history
+.bash_history
+.history
+.histfile
+.direnv/
+.envrc
+.envrc.local
+
+# ------------------------------------------------------------------------------
+# Environment files / local overrides / secrets
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.sample
+
+*.secret
+*.secrets
+*.token
+*.tokens
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.csr
+*.jks
+*.keystore
+*.gpg
+*.asc
+*.age
+*.sops.yaml
+*.dec
+
+secrets/
+secret/
+private/
+vault/
+vaults/
+.pass/
+passwords/
+credentials/
+creds/
+
+# ------------------------------------------------------------------------------
+# HashiCorp / secret tooling
+# ------------------------------------------------------------------------------
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+.vault-token
+vault-token
+*.vault
+vault.hcl
+!*.example.vault
+!.vault.example
+
+# ------------------------------------------------------------------------------
+# Ansible / automation sensitive or generated files
+# ------------------------------------------------------------------------------
+*.retry
+ansible.log
+collections/
+roles/*/files/secrets/
+roles/*/templates/secrets/
+group_vars/*vault*
+host_vars/*vault*
+*.vault.yml
+*.vault.yaml
+*.vault.json
+
+# ------------------------------------------------------------------------------
+# SSH / GPG / auth materials
+# ------------------------------------------------------------------------------
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+id_ecdsa
+id_ecdsa.pub
+known_hosts
+authorized_keys
+
+# ------------------------------------------------------------------------------
+# Archives / bundles / exports
+# ------------------------------------------------------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.tar.xz
+*.7z
+*.rar
+*.dmg
+*.iso
+
+# ------------------------------------------------------------------------------
+# Python
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+dist/
+build/
+site/
+.eggs/
+*.egg-info/
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+
+# ------------------------------------------------------------------------------
+# Node / JavaScript / frontend tooling
+# ------------------------------------------------------------------------------
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+.yarn-cache/
+.yarnrc
+.parcel-cache/
+.next/
+.nuxt/
+.svelte-kit/
+coverage/
+
+# ------------------------------------------------------------------------------
+# Ruby
+# ------------------------------------------------------------------------------
+.bundle/
+vendor/bundle/
+.ruby-version
+.ruby-gemset
+
+# ------------------------------------------------------------------------------
+# Go
+# ------------------------------------------------------------------------------
+bin/
+pkg/
+.coverprofile
+
+# ------------------------------------------------------------------------------
+# IDEs / editors
+# ------------------------------------------------------------------------------
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+out/
+
+# Vim / Neovim
+Session.vim
+.nvim/
+.nvimlog
+*.shada
+*.shada.*
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/
+nbactions.xml
+
+# Visual Studio / Rider
+.vs/
+*.suo
+*.user
+*.userossc
+*.sln.docstates
+
+# Xcode
+DerivedData/
+*.xcworkspace/
+*.xcuserstate
+*.xcuserdata/
+
+# ------------------------------------------------------------------------------
+# Local testing / scratch / personal workbench files
+# ------------------------------------------------------------------------------
+scratch/
+tmp/
+temp/
+playground/
+sandbox/
+notes/
+local/
+testing/
+experiments/
+
+# ------------------------------------------------------------------------------
+# Optional: keep generated screenshots / previews out of git
+# ------------------------------------------------------------------------------
+screenshots/
+preview/
+renders/
+
+# ------------------------------------------------------------------------------
+# Repo-specific local files
+# ------------------------------------------------------------------------------
+README.local.md
+.local/
