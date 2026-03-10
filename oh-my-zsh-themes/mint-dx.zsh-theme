@@ -67,6 +67,15 @@ get_device_label() {
   esac
 }
 
+# Detect active Python virtual environment
+get_venv_label() {
+  if [[ -n "$VIRTUAL_ENV" ]]; then
+    local venv_name
+    venv_name="$(basename "$VIRTUAL_ENV")"
+    echo " %{$FG[214]%}<< ${venv_name} >>%f"
+  fi
+}
+
 # Cache device label once when the theme is loaded to avoid repeating
 # system checks on every prompt render.
 DEVICE_LABEL="$(get_device_label)"
@@ -97,7 +106,7 @@ ZSH_THEME_RUBY_PROMPT_SUFFIX="›%{$reset_color%}"
 # - First line: user, device, host, directory, and Git information
 # - Second line: prompt character
 PROMPT='
-$(generate_prompt_path) $(git_prompt_info)
+$(generate_prompt_path) $(git_prompt_info) $(get_venv_label)
 ➜ '
 
 # Right prompt:
