@@ -104,4 +104,5 @@ PROMPT='
 RPROMPT='%(?.%B%F{46}✔%f%b.%B%F{196}✘%f%b) %B%F{15}[%D{%I:%M:%S%p}]%f%b'
 
 # LS_COLORS tuned for aggressive neon contrast
-export LS_COLORS="di=1;51:fi=15:ln=1;201:ex=1;46:*.sh=1;46:*.py=1;46:*.go=1;46:*.rb=1;46:*.js=1;46:*.ts=1;46:*.md=1;226:*.json=1;226:*.yaml=1;226:*.yml=1;226:*.toml=1;226:*.xml=1;226:*.ini=1;226:*.zip=1;196:*.tar=1;196:*.gz=1;196:*.tgz=1;196:*.bz2=1;196:*.xz=1;196"
+#export LS_COLORS="di=1;51:fi=15:ln=1;201:ex=1;46:*.sh=1;46:*.py=1;46:*.go=1;46:*.rb=1;46:*.js=1;46:*.ts=1;46:*.md=1;226:*.json=1;226:*.yaml=1;226:*.yml=1;226:*.toml=1;226:*.xml=1;226:*.ini=1;226:*.zip=1;196:*.tar=1;196:*.gz=1;196:*.tgz=1;196:*.bz2=1;196:*.xz=1;196"
+eval "$(dircolors -b)"

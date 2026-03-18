@@ -90,4 +90,5 @@ PROMPT='
 RPROMPT='%(?.%B%F{green}✔%f%b.%B%F{red}✘%f%b) %B%F{white}[%D{%I:%M:%S%p}]%f%b'
 
 # LS_COLORS tuned for dark Monokai-style backgrounds
-export LS_COLORS="di=1;96:fi=97:ln=1;95:ex=1;92:*.sh=1;92:*.py=1;92:*.go=1;92:*.md=1;93:*.json=1;93:*.yaml=1;93:*.yml=1;93:*.toml=1;93:*.zip=1;91:*.tar=1;91:*.gz=1;91"
+#export LS_COLORS="di=1;96:fi=97:ln=1;95:ex=1;92:*.sh=1;92:*.py=1;92:*.go=1;92:*.md=1;93:*.json=1;93:*.yaml=1;93:*.yml=1;93:*.toml=1;93:*.zip=1;91:*.tar=1;91:*.gz=1;91"
+eval "$(dircolors -b)"

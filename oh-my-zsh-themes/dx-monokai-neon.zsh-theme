@@ -97,4 +97,5 @@ printf '\033]11;#1E1E1E\007\033]10;#F8F8F2\007'
 #printf '\033]11;#2D2A2E\007\033]10;#FCFCFA\007'
 
 # LS_COLORS tuned for dark backgrounds
-export LS_COLORS="di=1;96:fi=97:ln=1;95:ex=1;92:*.sh=1;92:*.py=1;92:*.go=1;92:*.md=1;93:*.json=1;93:*.yaml=1;93:*.yml=1;93:*.toml=1;93:*.zip=1;91:*.tar=1;91:*.gz=1;91"
+#export LS_COLORS="di=1;96:fi=97:ln=1;95:ex=1;92:*.sh=1;92:*.py=1;92:*.go=1;92:*.md=1;93:*.json=1;93:*.yaml=1;93:*.yml=1;93:*.toml=1;93:*.zip=1;91:*.tar=1;91:*.gz=1;91"
+eval "$(dircolors -b)"
