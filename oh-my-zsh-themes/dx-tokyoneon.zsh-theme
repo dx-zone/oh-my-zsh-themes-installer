@@ -2,7 +2,13 @@
 # Tokyo Night base + Monokai neon accents
 
 # Tokyo Night background
-printf '\033]11;#1a1b26\007\033]10;#c0caf5\007'
+#printf '\033]11;#1a1b26\007\033]10;#c0caf5\007'   # Original Tokyo Night background with softer foreground
+printf '\033]11;#14111B\007\033]10;#F8F8F2\007'   # Slightly more purple-tinged charcoal  
+
+# Alternative background shades to experiment with:
+#printf '\033]11;#2a1a3a\007\033]10;#f8f8f2\007'  # A bit lighter, more contrast
+#printf '\033]11;#2d1b4e\007\033]10;#ffffff\007'  # Even lighter, more vibrant
+#printf '\033]11;#1e1b2e\007\033]10;#f8f8f2\007'  # Darker, more muted
 
 typeset -a DESKTOP_CHASSIS_TYPES=(3 6 7 12 13)
 typeset -a LAPTOP_CHASSIS_TYPES=(8 9 10 14)
